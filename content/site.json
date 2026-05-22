@@ -1,0 +1,34 @@
+{
+  "name": "David Solheim",
+  "title": "Field CTO · AI Adoption Strategist",
+  "headline": "Helping engineering organizations adopt AI coding tools at scale",
+  "subheadline": "Hands-on Cursor expert, multi-agent systems builder, and trusted technical advisor to teams shipping faster with AI-assisted development.",
+  "meta": {
+    "title": "David Solheim — Field CTO & AI Adoption Strategist",
+    "description": "Field CTO and AI adoption strategist helping engineering leaders roll out Cursor, multi-agent workflows, and AI-powered development at scale.",
+    "url": "https://cursorfieldcto.com"
+  },
+  "nav": [
+    { "label": "About", "href": "#about" },
+    { "label": "Expertise", "href": "#expertise" },
+    { "label": "Work", "href": "#work" },
+    { "label": "Resume", "href": "#resume" },
+    { "label": "Contact", "href": "#contact" }
+  ],
+  "ctas": {
+    "resume": { "label": "View Resume", "href": "#resume" },
+    "conversation": { "label": "Book a Conversation", "href": "#contact" },
+    "work": { "label": "See My Work", "href": "#work" }
+  },
+  "sections": {
+    "about": "About",
+    "expertise": "Expertise",
+    "work": "Selected Work",
+    "resume": "Resume",
+    "contact": "Contact"
+  },
+  "footer": {
+    "copyright": "David Solheim",
+    "tagline": "Built with Next.js, Cursor, and multi-agent workflows."
+  }
+}

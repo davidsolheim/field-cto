@@ -1,0 +1,21 @@
+{
+  "intro": "Capabilities shaped by building AI systems in production and advising engineering leaders on adoption.",
+  "items": [
+    {
+      "title": "Advanced Cursor & AI Agent Development",
+      "description": "Custom Composer skills, sub-agent orchestration, and gsd-turbo-style workflows that turn complex engineering tasks into repeatable, high-velocity pipelines."
+    },
+    {
+      "title": "AI Adoption Strategy & Rollouts",
+      "description": "Practical playbooks for introducing AI coding tools across teams — standards, guardrails, training, and metrics that prove ROI to leadership."
+    },
+    {
+      "title": "Technical Architecture & Platform Leadership",
+      "description": "Modern full-stack architecture with Next.js, Convex, and real-time systems — designed for maintainability, performance, and team scale."
+    },
+    {
+      "title": "Client Advisory & Influence",
+      "description": "Trusted technical partner to founders and engineering leaders — translating AI capability into product strategy, delivery plans, and confident decisions."
+    }
+  ]
+}
