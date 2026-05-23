@@ -28,10 +28,20 @@ export function ResumeSection({ title, content }: ResumeSectionProps) {
               ))}
             </div>
           ) : null}
-          <div className="mt-6 sm:mt-8">
+          <div className="mt-6 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap">
             <Button href={content.pdfPath} download className="w-full sm:w-auto">
               {content.downloadLabel}
             </Button>
+            {content.coverLetterPdfPath && content.coverLetterDownloadLabel ? (
+              <Button
+                href={content.coverLetterPdfPath}
+                variant="secondary"
+                download
+                className="w-full sm:w-auto"
+              >
+                {content.coverLetterDownloadLabel}
+              </Button>
+            ) : null}
           </div>
         </div>
         <ul className="space-y-4 border-t border-border pt-6 sm:pt-8 lg:border-t-0 lg:border-l lg:pt-0 lg:pl-10">

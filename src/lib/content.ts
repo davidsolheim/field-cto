@@ -57,7 +57,9 @@ export type ExpertiseContent = {
 
 export type ResumeContent = {
   pdfPath: string;
+  coverLetterPdfPath?: string;
   downloadLabel: string;
+  coverLetterDownloadLabel?: string;
   intro: string;
   highlights: string[];
   tools?: string[];

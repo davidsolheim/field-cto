@@ -1,10 +1,12 @@
 {
   "pdfPath": "/resume/david-solheim-resume.pdf",
-  "downloadLabel": "Download PDF",
+  "coverLetterPdfPath": "/resume/david-solheim-cover-letter.pdf",
+  "downloadLabel": "Download resume",
+  "coverLetterDownloadLabel": "Download cover letter",
   "intro": "One-page summary tailored to Field CTO and customer-facing technical leadership roles.",
   "tools": [
     "Cursor",
-    "Cursor Daily Driver",
+    "GitHub",
     "Composer 2.5",
     "OpenAI",
     "Next.js",
@@ -23,9 +25,9 @@
     "Wasabi/B2"
   ],
   "highlights": [
-    "Cursor Ecosystem: Daily driver and advanced innovator in Composer 2.5 skills, sub-agent orchestration, and Linear-integrated workflows.",
+    "Cursor Ecosystem: Advanced work with Composer 2.5 skills, sub-agent orchestration, and Linear-integrated workflows.",
     "AI Agent Systems: Slack agents, cross-device automation, task orchestration, routine-maximization workflows, and parallel development agents.",
-    "Core Stack: Cursor as the daily-driver development environment across Next.js, Vercel, Convex, Neon, Supabase, React Native, Expo, Figma, Linear, Slack, Git, Stripe, Square, and Wasabi/B2.",
-    "Other: Cursor-first self-improving agent loops, remote dev workflows, SaaS platform development, client strategy, and technical storytelling."
+    "Core Stack: Next.js, Vercel, Convex, Neon, Supabase, React Native, Expo, Figma, Linear, Slack, GitHub, Git, Stripe, Square, and Wasabi/B2.",
+    "Other: AI adoption strategy, technical storytelling, remote dev workflows, SaaS platform development, client strategy, and product feedback loops."
   ]
 }

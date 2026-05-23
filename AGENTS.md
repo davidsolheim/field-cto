@@ -29,7 +29,7 @@ This version has breaking changes — APIs, conventions, and file structure may 
 - Stack: Next.js 16 App Router, React 19, Tailwind CSS v4, Resend contact form (Server Action + Zod), deployed on Vercel
 - Linear tracking: Teton Web team, project `cursorfieldcto.com — Field CTO Site`
 - Content files: `site.json` (hero/nav/meta/headshot/heroVideo), `contact.json` (Connect section + form copy), `about.md`, `expertise.json`, `experience.json`, `resume.json`
-- Assets: headshot at `public/david_headshot.jpg` (path in `site.json`); resume PDF at `public/resume/david-solheim-resume.pdf`
+- Assets: headshot at `public/david_headshot.jpg` (path in `site.json`); resume PDF at `public/resume/david-solheim-resume.pdf`; cover letter at `public/resume/david-solheim-cover-letter.pdf`
 - Contact form requires env vars `RESEND_API_KEY` and `CONTACT_TO_EMAIL`
 - Vercel Framework Preset must be **Next.js** — if set to Other/public, root URL serves static files only and returns NOT_FOUND
 - Page flow: Hero → About → Expertise → Experience → Resume → Connect (`#connect`); hero video at `public/david-introduction.mp4` (poster: headshot)
