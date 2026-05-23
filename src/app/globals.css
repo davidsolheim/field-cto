@@ -18,7 +18,9 @@
   --text-base: clamp(1rem, 0.96rem + 0.25vw, 1.0625rem);
   --text-lg: clamp(1.125rem, 1.05rem + 0.35vw, 1.25rem);
   --text-xl: clamp(1.375rem, 1.2rem + 0.7vw, 1.75rem);
-  --text-display: clamp(2rem, 1.35rem + 3.2vw, 4.5rem);
+  --text-section: clamp(1.875rem, 1.45rem + 1.7vw, 2.875rem);
+  --text-lead: clamp(1.25rem, 1.1rem + 0.7vw, 1.5rem);
+  --text-display: clamp(2.25rem, 1.45rem + 3.4vw, 4.75rem);
 
   --leading-tight: 1.1;
   --leading-snug: 1.35;
@@ -148,4 +150,305 @@ body::before {
 :focus-visible {
   outline: 2px solid var(--ring);
   outline-offset: 3px;
+}
+
+.hero-section-backdrop {
+  background:
+    radial-gradient(circle at 50% -10%, rgba(127, 127, 127, 0.14), transparent 52%),
+    radial-gradient(circle at 100% 0%, rgba(127, 127, 127, 0.08), transparent 34%),
+    linear-gradient(to bottom, transparent, var(--background) 88%);
+}
+
+.hero-section-backdrop::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.28;
+  background-image:
+    linear-gradient(to right, var(--border) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--border) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(circle at 50% 0%, black, transparent 72%);
+}
+
+.hero-section-headline {
+  position: relative;
+}
+
+.hero-video-frame {
+  padding: 1px;
+  border-radius: 1.375rem;
+  border: 1px solid var(--border);
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--foreground) 8%, transparent),
+    transparent 42%,
+    color-mix(in srgb, var(--foreground) 4%, transparent)
+  );
+  box-shadow: var(--shadow-elevated);
+}
+
+.hero-video-frame::before {
+  content: "";
+  position: absolute;
+  inset: -1.25rem;
+  z-index: -1;
+  border-radius: 2rem;
+  background: radial-gradient(
+    circle at 50% 50%,
+    color-mix(in srgb, var(--foreground) 10%, transparent),
+    transparent 68%
+  );
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.hero-video-frame-inner {
+  box-shadow: var(--shadow-inset);
+}
+
+@media (min-width: 640px) {
+  .hero-video-frame {
+    border-radius: 1.625rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-video-play {
+    transform: none !important;
+  }
+}
+
+.status-dot {
+  position: relative;
+  display: inline-flex;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 9999px;
+  background: var(--foreground);
+}
+
+.status-dot::after {
+  content: "";
+  position: absolute;
+  inset: -0.375rem;
+  border-radius: 9999px;
+  border: 1px solid var(--foreground);
+  opacity: 0;
+  animation: status-pulse 2.4s var(--ease-out) infinite;
+}
+
+@keyframes status-pulse {
+  0% {
+    transform: scale(0.6);
+    opacity: 0.55;
+  }
+  80%,
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .status-dot::after {
+    animation: none;
+  }
+}
+
+.scroll-cue {
+  position: relative;
+  width: 1px;
+  height: 2.5rem;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--foreground) 30%,
+    var(--foreground) 70%,
+    transparent
+  );
+  overflow: hidden;
+}
+
+.scroll-cue::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    color-mix(in srgb, var(--background) 70%, transparent),
+    var(--background)
+  );
+  animation: scroll-cue 2.2s var(--ease-out) infinite;
+}
+
+@keyframes scroll-cue {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(200%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-cue::after {
+    animation: none;
+  }
+}
+
+.section-heading-rule {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    var(--foreground),
+    color-mix(in srgb, var(--foreground) 35%, transparent) 22%,
+    var(--border) 60%,
+    transparent
+  );
+}
+
+.card-arrow {
+  transition:
+    transform var(--duration-base) var(--ease-out),
+    opacity var(--duration-base) var(--ease-out);
+  opacity: 0.45;
+}
+
+.group:hover .card-arrow,
+.group:focus-visible .card-arrow {
+  transform: translate(0.25rem, -0.25rem);
+  opacity: 1;
+}
+
+.card-number {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+
+.tool-chip {
+  transition:
+    border-color var(--duration-base) var(--ease-out),
+    color var(--duration-base) var(--ease-out),
+    background-color var(--duration-base) var(--ease-out);
+}
+
+.tool-chip:hover {
+  border-color: var(--foreground);
+  color: var(--foreground);
+  background: color-mix(in srgb, var(--foreground) 4%, transparent);
+}
+
+.timeline {
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  left: 0.3125rem;
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    var(--foreground),
+    var(--border) 18%,
+    var(--border) 82%,
+    transparent
+  );
+}
+
+.timeline-marker {
+  position: absolute;
+  left: 0;
+  top: 0.75rem;
+  width: 0.6875rem;
+  height: 0.6875rem;
+  border-radius: 9999px;
+  background: var(--background);
+  border: 1px solid var(--foreground);
+  box-shadow: 0 0 0 4px var(--background);
+}
+
+.timeline-marker[data-current="true"]::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border-radius: 9999px;
+  background: var(--foreground);
+}
+
+.lead-paragraph {
+  position: relative;
+}
+
+.lead-paragraph::before {
+  content: "";
+  position: absolute;
+  top: 0.55em;
+  left: -1.25rem;
+  width: 0.5rem;
+  height: 1px;
+  background: var(--foreground);
+}
+
+@media (max-width: 639px) {
+  .lead-paragraph::before {
+    display: none;
+  }
+}
+
+.field-input {
+  appearance: none;
+  width: 100%;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--border);
+  padding: 0.875rem 0;
+  font-size: 1rem;
+  color: var(--foreground);
+  transition:
+    border-color var(--duration-base) var(--ease-out),
+    padding var(--duration-base) var(--ease-out);
+}
+
+.field-input::placeholder {
+  color: var(--muted-foreground);
+}
+
+.field-input:focus {
+  outline: none;
+  border-bottom-color: var(--foreground);
+}
+
+@media (max-width: 639px) {
+  .field-input {
+    font-size: 16px;
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  transition:
+    opacity 0.7s var(--ease-out),
+    transform 0.7s var(--ease-out);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }

@@ -8,10 +8,10 @@
     "label": "Introduction video"
   },
   "headline": "Helping engineering organizations adopt AI at scale",
-  "subheadline": "Strategic technical leader and AI adoption specialist focused on helping organizations understand, evaluate, and operationalize AI in software development. Founder of Teton Web with deep hands-on Cursor expertise, multi-agent orchestration, and customer-facing technical leadership.",
+  "subheadline": "I partner with engineering leaders to evaluate AI dev tools, shape Cursor adoption strategy, and stand up the multi-agent workflows behind real velocity gains — grounded in production work I run every day, not slide decks.",
   "meta": {
     "title": "David Solheim — Field CTO · AI Adoption Strategist",
-    "description": "Field CTO candidate with deep hands-on Cursor expertise — multi-agent orchestration, enterprise adoption strategy, and customer-facing technical leadership.",
+    "description": "Field CTO candidate with hands-on Cursor expertise — multi-agent systems, enterprise rollout strategy, and executive-level technical engagement.",
     "url": "https://cursorfieldcto.com"
   },
   "nav": [
@@ -33,7 +33,7 @@
     "resume": "Resume",
     "contact": "Connect"
   },
-  "experienceIntro": "Production leadership at Teton Web and prior operator experience — AI orchestration, client advisory, and the kind of outcomes I'd bring to a customer-facing role at Cursor.",
+  "experienceIntro": "Teton Web today, and a decade of operator history before it — the working ground beneath the strategy.",
   "footer": {
     "copyright": "David Solheim",
     "tagline": "Built with Cursor, Next.js, and multi-agent workflows."

@@ -3,7 +3,7 @@
   "coverLetterPdfPath": "/resume/david-solheim-cover-letter.pdf",
   "downloadLabel": "Download resume",
   "coverLetterDownloadLabel": "Download cover letter",
-  "intro": "One-page summary tailored to Field CTO and customer-facing technical leadership roles.",
+  "intro": "One page, written for hiring teams who prefer paper to scrolling.",
   "tools": [
     "Cursor",
     "GitHub",
@@ -25,9 +25,9 @@
     "Wasabi/B2"
   ],
   "highlights": [
-    "Cursor Ecosystem: Advanced work with Composer 2.5 skills, sub-agent orchestration, and Linear-integrated workflows.",
-    "AI Agent Systems: Slack agents, cross-device automation, task orchestration, routine-maximization workflows, and parallel development agents.",
-    "Core Stack: Next.js, Vercel, Convex, Neon, Supabase, React Native, Expo, Figma, Linear, Slack, GitHub, Git, Stripe, Square, and Wasabi/B2.",
-    "Other: AI adoption strategy, technical storytelling, remote dev workflows, SaaS platform development, client strategy, and product feedback loops."
+    "Cursor Ecosystem — deep daily use across Composer, custom skills, sub-agent orchestration, and Linear-integrated execution.",
+    "Agent Systems — Slack agents, cross-device automation, task orchestration, and parallel development agents running in production.",
+    "Stack Depth — production-grade work across the tools listed above, not survey-level familiarity.",
+    "Practice — technical storytelling, remote engineering operations, client strategy facilitation, and tight product-feedback loops with users."
   ]
 }

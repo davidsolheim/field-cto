@@ -1,5 +1,5 @@
 {
-  "intro": "Production leadership at Teton Web and prior operator experience — AI orchestration, client advisory, and the kind of outcomes I'd bring to a customer-facing role at Cursor.",
+  "intro": "Teton Web today, and a decade of operator history before it — the working ground beneath the strategy.",
   "roles": [
     {
       "title": "Founder & Lead Developer",
@@ -7,11 +7,11 @@
       "location": "Idaho Falls, ID",
       "dates": "February 2026 – Present",
       "bullets": [
-        "Founded and lead Teton Web, a specialized web development and AI orchestration consultancy delivering platforms, internal tooling, and adoption strategy for clients across industrial equipment, global nonprofit, insurance brokerage, and inventor-network markets. Serve as trusted technical advisor and de facto CTO on AI, platform, and web strategy.",
-        "Architected and productionized AI multi-agent orchestration systems that serve as force multipliers for development velocity, including Slack-based agents, cross-device automation, Linear/Slack task orchestration, and routine-maximization workflows. Used these systems to frame practical AI maturity, rollout risk, and workflow transformation for technical stakeholders.",
-        "Pioneered advanced Cursor and Composer 2.5 workflows that coordinate parallel sub-agents for issue execution and branch management. Public demos provided concrete proof points for AI-assisted software development maturity, adoption strategy, and engineering workflow transformation.",
-        "Led high-context client engagements, including major design-system proposal work, international platform/catalog delivery, and alumni-platform strategy facilitation. Comfortable operating as a peer to senior technical stakeholders while connecting architecture, implementation tradeoffs, and business outcomes.",
-        "Developing an all-in-one small business SaaS platform spanning website/CMS/CRM, realtime workflows, and AI. Manage proposals, contracts, financials, multi-tenant architecture, and product direction in ambiguous, fast-moving environments."
+        "Founded and lead Teton Web, an AI-orchestration and web development consultancy delivering platforms, internal tooling, and rollout guidance for clients across industrial equipment, global nonprofit, insurance brokerage, and inventor-network markets. Serve as trusted technical advisor and de facto CTO across their AI, platform, and web decisions.",
+        "Architected and productionized multi-agent systems that run as everyday force multipliers — Slack-resident agents, cross-device automation, Linear task pipelines, and routine-maximization workflows. They double as concrete reference points when I'm explaining maturity and rollout risk to technical buyers.",
+        "Pioneered Cursor + Composer workflows that coordinate parallel sub-agents for issue execution and branch management. Public demos serve as proof points for what mature AI-assisted development can actually ship in production.",
+        "Led high-context client engagements — major design-system proposal work, international platform and catalog delivery, and alumni-platform facilitation — operating as a peer to senior engineering and product leadership while connecting architecture, tradeoffs, and business outcomes.",
+        "Building an all-in-one small-business SaaS platform spanning website/CMS/CRM, realtime workflows, and AI. Own proposals, contracts, financials, multi-tenant architecture, and product direction end-to-end."
       ]
     },
     {
@@ -20,7 +20,7 @@
       "location": "Idaho Falls, ID",
       "dates": "January 2012 – September 2025",
       "bullets": [
-        "Built and managed hundreds of websites across Intuit Homestead, Wix, WordPress, Shopify, and Next.js, supporting clients from basic brochure sites to e-commerce and custom web applications.",
+        "Built and managed hundreds of websites across Intuit Homestead, Wix, WordPress, Shopify, and Next.js — from brochure sites to e-commerce and custom web applications.",
         "Handled ongoing website operations including redesigns, migrations, domains, DNS, hosting coordination, content updates, storefront configuration, troubleshooting, and client training.",
         "Operated a technology services business for small businesses and homes, resolving thousands of support cases across Windows, macOS, Android, iOS, networking, cloud, and dedicated-server environments.",
         "Designed and maintained 50+ workstation business networks, Google Workspace profiles, IP printing, file sharing, backup/data-retention policies, phone systems, security administration, and paperless iPad workflows that saved hundreds of hours annually."

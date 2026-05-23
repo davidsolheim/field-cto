@@ -22,6 +22,9 @@ This version has breaking changes — APIs, conventions, and file structure may 
 - When showcasing skills built in other tooling, describe them as Cursor custom skills without naming the original source tools
 - Use official Cursor brand assets on key site surfaces (`public/brand/cursor/`, `CursorLogo` component)
 - Site must be mobile-optimized — layouts, sticky nav, anchor scroll, and mobile menu across all breakpoints
+- No repetitive copy — subheadings must not restate headings, and section paragraphs must not near-duplicate each other
+- Hero CTAs (View resume, Connect, See experience) render below the paragraph copy, not beside the headline
+- Site is public — no password gate; deploy by pushing to `origin main`
 
 ## Learned Workspace Facts
 
@@ -32,4 +35,5 @@ This version has breaking changes — APIs, conventions, and file structure may 
 - Assets: headshot at `public/david_headshot.jpg` (path in `site.json`); resume PDF at `public/resume/david-solheim-resume.pdf`; cover letter at `public/resume/david-solheim-cover-letter.pdf`
 - Contact form requires env vars `RESEND_API_KEY` and `CONTACT_TO_EMAIL`
 - Vercel Framework Preset must be **Next.js** — if set to Other/public, root URL serves static files only and returns NOT_FOUND
-- Page flow: Hero → About → Expertise → Experience → Resume → Connect (`#connect`); hero video at `public/david-introduction.mp4` (poster: headshot)
+- Page flow: Hero → About → Expertise → Experience → Resume → Connect (`#contact`); hero video at `public/david-introduction.mp4` with poster `public/david-introduction-poster.jpg` (first frame of the video, not the headshot)
+- Resume/cover-letter PDFs in `public/resume/` are sourced from user-supplied Dropbox files (e.g. `David_Solheim_Field_CTO_Resume_*.pdf`) and drive resume section copy

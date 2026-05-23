@@ -1,21 +1,21 @@
 {
-  "intro": "What I'd bring to a customer-facing role at Cursor — grounded in production work, not slide decks.",
+  "intro": "Four capability areas where my day-to-day work maps directly onto the Field CTO mandate.",
   "items": [
     {
       "title": "AI-Driven Software Development & Adoption",
-      "description": "Advanced Cursor, Composer 2.5, custom skills, sub-agent orchestration, multi-agent development workflows, AI maturity framing, and workflow transformation."
+      "description": "Cursor power-user practice across Composer, custom skills, and bespoke multi-agent patterns. Use the same systems to frame maturity, rollout risk, and workflow change for organizations evaluating new tooling."
     },
     {
       "title": "Enterprise Client Strategy & Influence",
-      "description": "Technical proposals and roadmaps, executive-level client engagement, bridging technical capabilities to business impact, adoption strategy design, and strategy sessions with technical leaders."
+      "description": "Technical proposals and roadmaps, peer engagement with senior engineering and product leadership, and the executive-room presence to land hard tradeoffs."
     },
     {
       "title": "Technical Architecture & Platform Leadership",
-      "description": "Systems-level evaluation of AI developer tools; Next.js, Vercel, Convex, Neon, and Supabase full-stack platforms; GitHub, Linear, Slack, and Git integrations; remote/hybrid engineering workflows; SaaS architecture."
+      "description": "Full-stack production work across modern serverless and integration surfaces; remote-first engineering operations; multi-tenant SaaS architecture; pragmatic build-vs-buy judgment under cost and time pressure."
     },
     {
       "title": "Rapid Innovation & Execution in Ambiguity",
-      "description": "Self-improving agent systems, parallelized development workflows, fast-moving environments, continuous shipping of production AI tooling, and thought leadership on X."
+      "description": "Self-improving agent systems, parallelized workflows, and the temperament to ship when the spec is still moving. Public-facing demos and writing that make the work legible to a broader audience."
     }
   ]
 }
