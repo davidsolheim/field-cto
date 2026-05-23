@@ -34,10 +34,12 @@ Editable content lives in `content/`:
 - `site.json` — hero, nav, meta, CTAs
 - `about.md` — about narrative
 - `expertise.json` — capability cards
+- `experience.json` — professional experience
 - `resume.json` — resume highlights + PDF path
-- `work/*.md` — case studies
+- `contact.json` — connect section and form copy
 
 Add your resume PDF to `public/resume/david-solheim-resume.pdf`.
+Add introduction video to `public/david-introduction.mp4`.
 
 ## Scripts
 

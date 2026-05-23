@@ -1,0 +1,18 @@
+{
+  "intro": "Founder-led delivery at Teton Web — building AI orchestration platforms, advising enterprise clients, and shipping production systems with Cursor as the daily driver.",
+  "roles": [
+    {
+      "title": "Founder & Lead Developer",
+      "company": "Teton Web Ventures LLC",
+      "location": "Idaho Falls, ID",
+      "dates": "February 2026 – Present",
+      "bullets": [
+        "Founded and lead Teton Web, a specialized web development and AI orchestration consultancy delivering high-impact platforms and internal tooling for clients across industrial equipment, global nonprofit, insurance brokerage, and inventor-network markets. Serve as trusted technical advisor and de facto CTO on AI/web strategy.",
+        "Architected and productionized sophisticated AI multi-agent orchestration systems that serve as force multipliers for development velocity, including Slack-based agents, cross-device automation, Linear/Slack task orchestration, and routine-maximization workflows. These platforms demonstrate large-scale AI adoption in complex environments—directly analogous to enterprise rollout challenges.",
+        "Pioneered advanced Cursor extensions, including Composer 2.5 skills that dynamically coordinate parallel sub-agents for issue execution and branch-management workflows. Public demos showed dramatic acceleration, providing real-world proof points for AI maturity and workflow transformation.",
+        "Led high-context client engagements, including major design-system proposal work, international platform/catalog delivery, and alumni-platform strategy facilitation. Full-stack work with Cursor as the daily-driver development environment across Next.js, Convex/Neon, Vercel, and Figma workflows.",
+        "Developing an ambitious all-in-one small business SaaS platform spanning website/CMS/CRM, realtime workflows, and AI. Manage proposals, contracts, financials, and multi-tenant architecture while thriving in ambiguous, fast-paced settings."
+      ]
+    }
+  ]
+}

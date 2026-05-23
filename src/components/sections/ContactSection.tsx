@@ -1,17 +1,15 @@
+import type { ContactContent } from "@/lib/content";
 import { Section } from "@/components/ui/Section";
 import { ContactForm } from "./ContactForm";
 
 type ContactSectionProps = {
-  title: string;
+  content: ContactContent;
 };
 
-export function ContactSection({ title }: ContactSectionProps) {
+export function ContactSection({ content }: ContactSectionProps) {
   return (
     <Section id="contact">
-      <ContactForm
-        title={title}
-        intro="Interested in Field CTO, AI adoption strategy, or a conversation about how your team can ship faster with Cursor? Send a note."
-      />
+      <ContactForm content={content} />
     </Section>
   );
 }

@@ -16,7 +16,7 @@ export function ExpertiseSection({ title, content }: ExpertiseSectionProps) {
         </h2>
         <p className="mt-4 text-muted">{content.intro}</p>
       </div>
-      <div className="mt-10 grid gap-4 md:grid-cols-2">
+      <div className="mt-8 grid gap-4 sm:grid-cols-2">
         {content.items.map((item) => (
           <Card key={item.title}>
             <h3 className="text-base font-medium tracking-[var(--tracking-normal)]">

@@ -1,13 +1,31 @@
 {
   "pdfPath": "/resume/david-solheim-resume.pdf",
   "downloadLabel": "Download PDF",
-  "intro": "One-page summary of experience relevant to Field CTO and AI adoption leadership roles.",
+  "intro": "One-page summary tailored to Field CTO and customer-facing technical leadership roles.",
+  "tools": [
+    "Cursor",
+    "Cursor Daily Driver",
+    "Composer 2.5",
+    "OpenAI",
+    "Next.js",
+    "Vercel",
+    "Convex",
+    "Neon",
+    "Supabase",
+    "React Native",
+    "Expo",
+    "Figma",
+    "Linear",
+    "Slack",
+    "Git",
+    "Stripe",
+    "Square",
+    "Wasabi/B2"
+  ],
   "highlights": [
-    "Founder & technical lead at Teton Web — platform engineering, client advisory, and AI-native delivery workflows",
-    "Deep production experience with Cursor: custom skills, multi-agent orchestration, and autonomous issue execution (gsd-turbo)",
-    "Shipped AI-assisted systems across client portfolios — from feedback resolution pipelines to real-time product platforms",
-    "Trusted advisor to engineering leaders on AI tool selection, rollout strategy, and developer experience",
-    "Full-stack architect: Next.js, TypeScript, Convex, Vercel — performance-focused, production-grade delivery",
-    "Strong communicator — equally effective in executive conversations, technical deep-dives, and hands-on pairing"
+    "Cursor Ecosystem: Daily driver and advanced innovator in Composer 2.5 skills, sub-agent orchestration, and Linear-integrated workflows.",
+    "AI Agent Systems: Slack agents, cross-device automation, task orchestration, routine-maximization workflows, and parallel development agents.",
+    "Core Stack: Cursor as the daily-driver development environment across Next.js, Vercel, Convex, Neon, Supabase, React Native, Expo, Figma, Linear, Slack, Git, Stripe, Square, and Wasabi/B2.",
+    "Other: Cursor-first self-improving agent loops, remote dev workflows, SaaS platform development, client strategy, and technical storytelling."
   ]
 }

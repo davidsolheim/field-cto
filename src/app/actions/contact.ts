@@ -1,12 +1,13 @@
 "use server";
 
+import { getContactContent } from "@/lib/content";
 import { Resend } from "resend";
 import { z } from "zod";
 
 const contactSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(120),
-  email: z.string().trim().email("Enter a valid email"),
-  company: z.string().trim().max(120).optional(),
+  email: z.string().trim().email("Enter a valid work email"),
+  role: z.string().trim().max(120).optional(),
   message: z.string().trim().min(10, "Message must be at least 10 characters").max(4000),
   website: z.string().max(0).optional(),
 });
@@ -14,17 +15,18 @@ const contactSchema = z.object({
 export type ContactFormState = {
   ok: boolean;
   message: string;
-  fieldErrors?: Partial<Record<"name" | "email" | "company" | "message", string>>;
+  fieldErrors?: Partial<Record<"name" | "email" | "role" | "message", string>>;
 };
 
 export async function submitContactForm(
   _prevState: ContactFormState,
   formData: FormData,
 ): Promise<ContactFormState> {
+  const contact = getContactContent();
   const parsed = contactSchema.safeParse({
     name: formData.get("name"),
     email: formData.get("email"),
-    company: formData.get("company") || undefined,
+    role: formData.get("role") || undefined,
     message: formData.get("message"),
     website: formData.get("website") || undefined,
   });
@@ -36,7 +38,7 @@ export async function submitContactForm(
       if (
         field === "name" ||
         field === "email" ||
-        field === "company" ||
+        field === "role" ||
         field === "message"
       ) {
         fieldErrors[field] = issue.message;
@@ -51,7 +53,7 @@ export async function submitContactForm(
   }
 
   if (parsed.data.website) {
-    return { ok: true, message: "Thanks — your message has been sent." };
+    return { ok: true, message: contact.successMessage };
   }
 
   const apiKey = process.env.RESEND_API_KEY;
@@ -60,30 +62,30 @@ export async function submitContactForm(
   if (!apiKey || !to) {
     return {
       ok: false,
-      message: "Contact form is not configured yet. Email hello@cursorfieldcto.com directly.",
+      message: contact.configErrorMessage,
     };
   }
 
   const resend = new Resend(apiKey);
-  const companyLine = parsed.data.company ? `\nCompany: ${parsed.data.company}` : "";
+  const roleLine = parsed.data.role ? `\nRole/team: ${parsed.data.role}` : "";
 
   const { error } = await resend.emails.send({
     from: "cursorfieldcto.com <onboarding@resend.dev>",
     to,
     replyTo: parsed.data.email,
-    subject: `Field CTO inquiry from ${parsed.data.name}`,
-    text: `Name: ${parsed.data.name}\nEmail: ${parsed.data.email}${companyLine}\n\n${parsed.data.message}`,
+    subject: `cursorfieldcto.com: note from ${parsed.data.name}`,
+    text: `Name: ${parsed.data.name}\nEmail: ${parsed.data.email}${roleLine}\n\n${parsed.data.message}`,
   });
 
   if (error) {
     return {
       ok: false,
-      message: "Something went wrong sending your message. Please try again.",
+      message: contact.sendErrorMessage,
     };
   }
 
   return {
     ok: true,
-    message: "Thanks — your message has been sent. I will get back to you soon.",
+    message: contact.successMessage,
   };
 }

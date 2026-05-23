@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
-import type { ReactNode } from "react";
+import type { MouseEvent, ReactNode } from "react";
+import { scrollToSectionHref } from "@/lib/section-scroll";
 
 type ButtonProps = {
   href: string;
@@ -17,6 +20,15 @@ const variants = {
   ghost: "border border-transparent text-foreground hover:border-border",
 };
 
+function handleHashClick(event: MouseEvent<HTMLAnchorElement>, href: string) {
+  if (!href.startsWith("#")) {
+    return;
+  }
+
+  event.preventDefault();
+  scrollToSectionHref(href, "smooth");
+}
+
 export function Button({
   href,
   children,
@@ -24,7 +36,7 @@ export function Button({
   className = "",
   download,
 }: ButtonProps) {
-  const classes = `inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-medium tracking-[var(--tracking-normal)] transition-[background-color,border-color,color,transform] duration-[var(--duration-base)] ease-[var(--ease-out)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-ring ${variants[variant]} ${className}`;
+  const classes = `inline-flex min-h-[var(--touch-target)] items-center justify-center rounded-full px-5 py-2.5 text-sm font-medium tracking-[var(--tracking-normal)] transition-[background-color,border-color,color,transform] duration-[var(--duration-base)] ease-[var(--ease-out)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-ring ${variants[variant]} ${className}`;
 
   if (download) {
     return (
@@ -36,7 +48,11 @@ export function Button({
 
   if (href.startsWith("#")) {
     return (
-      <a href={href} className={classes}>
+      <a
+        href={href}
+        className={classes}
+        onClick={(event) => handleHashClick(event, href)}
+      >
         {children}
       </a>
     );

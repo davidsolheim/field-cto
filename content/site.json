@@ -1,34 +1,41 @@
 {
   "name": "David Solheim",
   "title": "Field CTO · AI Adoption Strategist",
-  "headline": "Helping engineering organizations adopt AI coding tools at scale",
-  "subheadline": "Hands-on Cursor expert, multi-agent systems builder, and trusted technical advisor to teams shipping faster with AI-assisted development.",
+  "headshot": "/david_headshot.jpg",
+  "heroVideo": {
+    "src": "/david-introduction.mp4",
+    "poster": "/david_headshot.jpg",
+    "label": "Introduction video"
+  },
+  "headline": "Helping engineering organizations adopt AI at scale",
+  "subheadline": "Strategic technical leader and AI adoption specialist with deep expertise advancing software development through AI tooling and multi-agent orchestration. Cursor ecosystem power user with advanced Composer skills and sub-agent workflows that deliver order-of-magnitude velocity gains.",
   "meta": {
-    "title": "David Solheim — Field CTO & AI Adoption Strategist",
-    "description": "Field CTO and AI adoption strategist helping engineering leaders roll out Cursor, multi-agent workflows, and AI-powered development at scale.",
+    "title": "David Solheim — Field CTO · AI Adoption Strategist",
+    "description": "Field CTO candidate with deep hands-on Cursor expertise — multi-agent orchestration, enterprise adoption strategy, and customer-facing technical leadership.",
     "url": "https://cursorfieldcto.com"
   },
   "nav": [
     { "label": "About", "href": "#about" },
     { "label": "Expertise", "href": "#expertise" },
-    { "label": "Work", "href": "#work" },
+    { "label": "Experience", "href": "#experience" },
     { "label": "Resume", "href": "#resume" },
-    { "label": "Contact", "href": "#contact" }
+    { "label": "Connect", "href": "#contact" }
   ],
   "ctas": {
-    "resume": { "label": "View Resume", "href": "#resume" },
-    "conversation": { "label": "Book a Conversation", "href": "#contact" },
-    "work": { "label": "See My Work", "href": "#work" }
+    "resume": { "label": "View resume", "href": "#resume" },
+    "conversation": { "label": "Connect", "href": "#contact" },
+    "experience": { "label": "See experience", "href": "#experience" }
   },
   "sections": {
     "about": "About",
     "expertise": "Expertise",
-    "work": "Selected Work",
+    "experience": "Experience",
     "resume": "Resume",
-    "contact": "Contact"
+    "contact": "Connect"
   },
+  "experienceIntro": "Production leadership at Teton Web — AI orchestration, client advisory, and the kind of outcomes I'd bring to a customer-facing role at Cursor.",
   "footer": {
     "copyright": "David Solheim",
-    "tagline": "Built with Next.js, Cursor, and multi-agent workflows."
+    "tagline": "Built with Cursor, Next.js, and multi-agent workflows."
   }
 }

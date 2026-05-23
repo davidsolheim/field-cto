@@ -1,21 +1,21 @@
 {
-  "intro": "Capabilities shaped by building AI systems in production and advising engineering leaders on adoption.",
+  "intro": "What I'd bring to a customer-facing role at Cursor — grounded in production work, not slide decks.",
   "items": [
     {
-      "title": "Advanced Cursor & AI Agent Development",
-      "description": "Custom Composer skills, sub-agent orchestration, and gsd-turbo-style workflows that turn complex engineering tasks into repeatable, high-velocity pipelines."
+      "title": "AI-Driven Software Development & Adoption",
+      "description": "Advanced Cursor, Composer 2.5, custom skills, sub-agent orchestration, multi-agent development workflows, AI maturity framing, and workflow transformation."
     },
     {
-      "title": "AI Adoption Strategy & Rollouts",
-      "description": "Practical playbooks for introducing AI coding tools across teams — standards, guardrails, training, and metrics that prove ROI to leadership."
+      "title": "Enterprise Client Strategy & Influence",
+      "description": "Technical proposals and roadmaps, executive-level client engagement, bridging technical capabilities to business impact, adoption strategy design, and strategy sessions with technical leaders."
     },
     {
       "title": "Technical Architecture & Platform Leadership",
-      "description": "Modern full-stack architecture with Next.js, Convex, and real-time systems — designed for maintainability, performance, and team scale."
+      "description": "Cursor-first development with Next.js, Vercel, Convex, Neon, and Supabase full-stack platforms; AI-assisted dev tooling evaluation; Cursor, Linear, Slack, and Git integrations; remote/hybrid environments; SaaS architecture."
     },
     {
-      "title": "Client Advisory & Influence",
-      "description": "Trusted technical partner to founders and engineering leaders — translating AI capability into product strategy, delivery plans, and confident decisions."
+      "title": "Rapid Innovation & Execution in Ambiguity",
+      "description": "Self-improving agent systems, parallelized development workflows, fast-moving environments, continuous shipping of production AI tooling, and thought leadership on X."
     }
   ]
 }

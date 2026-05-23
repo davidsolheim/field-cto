@@ -1,0 +1,19 @@
+{
+  "title": "Connect",
+  "intro": "If you're on Cursor's hiring team, in engineering, GTM, or leadership — I'd welcome a note. Whether you're evaluating this profile, have a question about my work, or want to set up a conversation, I'm easy to reach.",
+  "supporting": "Recruiting, hiring managers, and Cursor teammates are all welcome. A few sentences is enough.",
+  "submitLabel": "Send message",
+  "submittingLabel": "Sending…",
+  "fields": {
+    "name": "Name",
+    "email": "Work email",
+    "role": "Role or team",
+    "roleOptional": "(optional)",
+    "rolePlaceholder": "e.g. Talent, Field Engineering, Product",
+    "message": "Message",
+    "messagePlaceholder": "What would be helpful to discuss?"
+  },
+  "successMessage": "Thanks — I received your note and will reply soon.",
+  "configErrorMessage": "The form isn't configured yet. Email hello@cursorfieldcto.com directly.",
+  "sendErrorMessage": "Something went wrong sending your message. Please try again."
+}
