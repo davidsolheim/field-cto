@@ -13,7 +13,7 @@ export default function SiteLayout({ children }: { children: ReactNode }) {
     jobTitle: site.title,
     url: site.meta.url,
     description: site.meta.description,
-    image: `${site.meta.url}${site.headshot}`,
+    image: `${site.meta.url}/opengraph-image`,
   };
 
   return (
