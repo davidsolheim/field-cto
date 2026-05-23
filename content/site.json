@@ -4,7 +4,7 @@
   "headshot": "/david_headshot.jpg",
   "heroVideo": {
     "src": "/david-introduction.mp4",
-    "poster": "/david_headshot.jpg",
+    "poster": "/david-introduction-poster.jpg",
     "label": "Introduction video"
   },
   "headline": "Helping engineering organizations adopt AI at scale",

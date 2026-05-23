@@ -28,7 +28,7 @@ export function HeroSection({ site, resume }: HeroSectionProps) {
         }}
       />
       <Container className="relative">
-        <div className="grid gap-8 sm:gap-10 lg:grid-cols-[1fr_min(100%,22rem)] lg:items-start lg:gap-14">
+        <div className="grid gap-8 sm:gap-10 lg:grid-cols-[1fr_min(100%,36rem)] lg:items-start lg:gap-14">
           <div className="order-2 lg:order-1">
             <div className="mb-5 flex flex-wrap items-center gap-x-3 gap-y-2 sm:mb-6 sm:gap-x-4 sm:gap-y-3">
               <CursorLogo
@@ -68,7 +68,7 @@ export function HeroSection({ site, resume }: HeroSectionProps) {
             </div>
           </div>
 
-          <div className="order-1 mx-auto w-full max-w-[min(100%,22rem)] lg:order-2 lg:mx-0 lg:max-w-none">
+          <div className="order-1 w-full lg:order-2">
             {heroVideo ? (
               <video
                 src={heroVideo.src}
